@@ -76,9 +76,14 @@
     ],
     "description": "Python Logging"
   },
+  "strftime": {
+    "prefix": "strftime",
+    "body": ["stftime = dt.strftime('%Y-%m-%d %H:%M:%S')"],
+    "description": "strftime"
+  },
   "docstring": {
     "prefix": "docstring",
-    "body":[
+    "body": [
       "\"\"\"A one line summary of the module or program, terminated by a period.",
       "",
       "Leave one blank line.  The rest of this docstring should contain an",
@@ -92,11 +97,11 @@
       "  bar = foo.FunctionBar()",
       "\"\"\""
     ],
-    "module docstring google python coding style guide."
+    "description": "module docstring google python coding style guide."
   },
   "funcdocstring": {
     "prefix": "funcdocstring",
-    "body":[
+    "body": [
       "\"\"\"Fetches rows from a Smalltable.",
       "",
       "Retrieves rows pertaining to the given keys from the Table instance",
@@ -129,11 +134,11 @@
       "  IOError: An error occurred accessing the smalltable.",
       "\"\"\""
     ],
-    "function docstring google python coding style guide."
+    "description": "function docstring google python coding style guide."
   },
   "classdocstring": {
     "prefix": "classdocstring",
-    "body":[
+    "body": [
       "\"\"\"Summary of class here.",
       "",
       "Longer class information....",
@@ -142,8 +147,13 @@
       "Attributes:",
       "    likes_spam: A boolean indicating if we like SPAM or not.",
       "    eggs: An integer count of the eggs we have laid.",
-      "\"\"\"",
+      "\"\"\""
     ],
-    "module docstring google python coding style guide."
+    "description": "module docstring google python coding style guide."
   },
+  "commonlogger": {
+    "prefix": "commonlogger",
+    "body": ["log = logging.getLogger(f\"{LOGGER_NAME}.{__name__}\")"],
+    "description": "common logger name"
+  }
 }
